@@ -2,7 +2,7 @@
 
 My little experiments with [the first Universal Windows Platform app written in pure Rust](https://github.com/bdbai/firstuwp-rs/). 
 
-The goal was to check/prove UWP-RS job (work) on my Lumia devices. The result : yes, I can sideload UWP-RS app onto L950/L640 :
+The goal was to check/prove UWP-RS job (work) on my Lumia devices. The result: yes, I can sideload UWP-RS app onto L950/L640!
 
 ![UWP-RS](images/shot1.png)
 
