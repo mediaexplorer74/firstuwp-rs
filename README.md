@@ -1,9 +1,13 @@
 # First UWP in Rust
-<a href='https://www.microsoft.com/store/apps/9PKF8HP44J2H?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="240"/></a>
 
-The first Universal Windows Platform app written in pure Rust.
+My little experiments with [the first Universal Windows Platform app written in pure Rust](https://github.com/bdbai/firstuwp-rs/). 
 
-**Note: this project is an early-stage experiment. Code quality is not guaranteed. Crashes or memory leak may occur.**
+The goal was to check/prove UWP-RS job (work) on my Lumia devices. The result : yes, I can sideload UWP-RS app onto L950/L640 :
+
+![UWP-RS](images/shot1.png)
+
+## The original words from [the author](https://github.com/bdbai/) 
+**This project is an early-stage experiment. Code quality is not guaranteed. Crashes or memory leak may occur.**
 
 ## What have been done
 - Initialize Application during launch activation
@@ -30,11 +34,6 @@ Add-AppxPackage -Register AppxManifest.xml
 
 # Then launch "First UWP in Rust" in your Start Menu
 ```
-
-## Screenshots
-![MainPage on PC](images/PC-MainPage.png?raw=true)
-
-![MainPage on Windows Phone (portrait)](images/WP-MainPage-Portrait.png?raw=true)
 
 ## Cross compilation and Packaging
 The default targets `*-pc-windows-*` has some link options unsuitable for UWP applications. A package that contains executable files generated with such target fails WACK in terms of `AppContainerCheck` and unsupported APIs used. To pass WACK, `*-uwp-windows-*` targets should be used.
@@ -82,3 +81,13 @@ signtool sign /v /fd SHA256 /a /f firstuwp_TemporaryKey.pfx FirstUwp_0.0.1.0_x64
 ```
 
 Then the package is ready to deploy through [Device Portal](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) or [App Installer](https://docs.microsoft.com/en-us/windows/msix/app-installer/app-installer-root) at your option.
+
+## References
+- https://github.com/bdbai/firstuwp-rs/
+- https://github.com/bdbai/
+
+## ..
+As-is. No support. RnD only
+
+##
+-- [m][e] 2023
